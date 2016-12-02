@@ -1,0 +1,1051 @@
+/* Se quitan las márgenes para que la página ocupe toda la pantalla */
+    html, body, div, h1, h2, h3, h4, h5, h6, a, p, ol, img, section, ul, li, header, article {
+		margin: 0;
+		padding: 0;
+		border: 0; 
+	}
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		font-family: sans-serif;
+		font-weight: 200;
+		color: #919499;
+		background: #fff url(images/overlay.png) repeat;
+	}
+
+	body,input,textarea,select
+	{
+		font-size: 17px;
+		line-height: 32px;
+	}
+	
+	.container {
+			width: 100%;
+		}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	   #logo {
+            position: absolute;
+            height: 90px;
+            top: 30%;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: -10px;
+	        }
+	
+		#logo z a
+		{
+			display: block;
+			letter-spacing: 2px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 36px;
+			font-weight: 100;
+			color: #323338;
+			margin: -70px 0px 0px 0px;
+		}
+
+		#logo span
+		{		
+			display: block;
+			padding-top: 20px 0px -50px 0px ;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 16px;
+			color: #202020;
+		}			
+			
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		padding: 0px 0px 0px 0px;
+		z-index: 999;
+	}
+	
+		#nav ul
+		{
+			display: inline-block;
+			width: 85%;
+			border-radius: 40px;
+			background-color: rgba(40, 40, 40, 0.9);
+		}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				padding: 5px 20px;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 100;
+				font-size: 14px;
+				outline: 0;
+				color: #7b7b7b;
+				z-index: 999;
+			}
+
+			#nav > ul > li > a:hover
+			{
+				/* Se cambia el color de mouse cuando se pase por encima de los botones de la barra de menu */
+				color: #FFF;
+				transform : scale(1.08);
+        		-webkit-transition-duration: 0.2s;
+   				 transition-duration: 0.2s;
+			}
+			
+			#nav > ul > li > a.seleccionado
+			{
+				color: #FFF;
+			}
+			
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+			
+/******************************************
+PARAMETROS PAGINA INICIAL
+*******************************************/	
+			
+	#textos
+	{
+		font-size:24px;
+		text-align: center;
+		font-style: oblique;
+		max-width: 90%;
+		margin: 0px auto;
+		padding: 80px 0px 80px 0px;
+	}
+
+	#imagenfondo
+	{
+		text-align:center;
+		position: relative;
+		margin: -30px auto;
+		display: block;
+	}
+	
+	#imagenmapa
+	{
+		text-align:center;
+		position: relative;
+		margin: 10px auto;
+		display:block;
+	}
+		
+	img
+	{
+		margin: 0 0 19px 0;
+	}
+				
+
+/*******************************************************************************
+ textos                                                                         ********************************************************************************/
+
+	.titulo li
+	{
+			border-radius: 0px 0px 40px 40px;
+			display: block;
+			letter-spacing: 1px;
+			font-weight: 100;
+			outline: 0;
+			color: #FFF;
+			padding: 20px 0px 0px 0px;
+			text-align:center;
+			margin: 0px 300px;
+			background-color: rgba(30, 30, 30, 0.98);
+			border-left: 1px solid;
+			border-right: 1px solid;
+			border-width: 1px solid;
+	}
+	
+	p{
+		text-align: justify;
+		font-size: 14px;
+		display: block;
+		letter-spacing: -0.2px;
+		line-height:22px;
+	}
+	
+	m{
+		text-align: justify;
+		font-size: 14px;
+		display: block;
+		letter-spacing: -0.2px;
+		line-height:22px;
+	}
+
+/*********************************************
+ Secciones de noticias 
+ *********************************************/
+	
+		section
+		{
+			margin: 0px 3px 0px 3px;
+			max-width: 24.3%;
+		}
+		
+		/* se coloca animacion al pasar el mouse sobre las imagenes de noticias */
+		section:hover
+		{
+		
+		 transform : scale(1.05);
+        -moz-transform : scale(1.05);      /* Firefox */
+        -webkit-transform : scale(1.05);   /* Chrome - Safari */
+        -o-transform : scale(1.05);        /* Opera */
+		}
+		
+		section > :last-child,
+		article > :last-child
+		{
+			margin-bottom: 0;
+		}
+
+		section:last-child,
+		article:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		.row > section,
+		.row > article
+		{
+			margin: 20px 0 80px 0;
+
+		}
+	
+	/* Images */
+
+		.image
+		{
+			display: inline-block;
+		}
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+				border-radius: 6px;
+			}
+
+		
+			.image.full
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 20px 0;
+		
+			}
+			
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 32px 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+			
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+		background: #ddd url(../images/bogotan2.jpg) no-repeat center;
+		background-size: cover;
+		height:400px;
+		padding: 8px 0px;
+		text-align: center;
+	}
+	
+	
+	header
+	{
+		margin-bottom: 20px;
+	}
+	
+		header .byline
+		{
+			margin: 8px 0px 0px 0px;
+			padding: 8px 0px 8px 0px;
+		}
+
+		.homepage #header
+		{
+			padding: 160px 0px;
+		}
+
+		#header .container
+		{
+		}
+
+
+/***********************************************
+Main                                                                     
+************************************************/
+
+	#main
+	{
+		position: relative;
+		background: #fff url(images/overlay.png) repeat;
+		padding: -30px 0px;
+	}
+	
+	#main2
+	{
+		position: relative;
+		background: #fff url(images/overlay.png) center center;
+		margin: -25px 0px 0px 0px;
+	}
+	
+	.divider
+	{
+		overflow: hidden;
+		border-top: 1px solid #666666;
+		margin: 25px 0px -25px 0px;
+	}
+
+
+	
+/****************************************
+ Copyright                                                                  
+*****************************************/
+	
+	#copyright
+	{
+		position: absolute;
+		padding: 30px 0px 30px 0px;
+		text-align: center;
+		background-color: #000000;
+		width: 100%;
+		}
+	
+	#copyright ul
+	{
+		margin: 0px auto;
+		padding: 0px 10px;
+		max-width: 90%;
+	}		
+	
+	#copyright li
+	{
+		text-decoration: none;
+		font-size: 12px;
+		color: rgba(250,250,250,.8);
+		display: inline-block;	
+	}		
+	
+/*******************************************************************************************
+	ELEMENTOS DEL CUADRO DE INFO DE RETROSPECTIVA Y PROSPECTIVA
+*******************************************************************************************/
+.contenido {
+	max-width: 900px; /*Esta sección tendrá un ancho de maximo 900px */
+	margin: 20px auto;
+	position: relative;
+	overflow-x: hidden;/* El contenido de los elementos contenidos en este elemento
+						  que sobrepasen los límites de este horizontalmente, se ocultan */
+}
+
+.suceso {
+	background-color: rgba(0, 0, 0, 0.4);
+	max-width: 900px;
+}
+
+.suceso-fecha {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	width: 220px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	color: #222222;
+}
+
+.suceso-contenido {
+	margin: 0px;
+	width: calc(100% - 225px);
+	display: inline-block;
+}
+
+.suceso-titulo {
+	padding: 0px 0px 0px 20px;
+	width: 100%;
+	height: 40px;
+	position: relative;
+	display: inline-block;
+	background-color: #222222;
+	color: #DDDDDD;
+	line-height: 40px;
+}
+
+.suceso-info {
+	position: absolute;
+	display: none;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: justify;
+	}
+
+.suceso:hover .suceso-fecha {
+	background-color: #DDDDDD;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+	padding: 0px 0px 0px 10px; /* Transicion al pasar el cursor por encima de las fechas */
+}
+
+.suceso:hover .suceso-titulo {
+	top:0px;
+	position: absolute;
+	width: calc(100% - 225px);
+	text-align: center;
+}
+
+.suceso:hover .suceso-info {
+	padding: 20px 20px;
+	z-index: 9900;
+	display: inline-block;
+	width: calc(100% - 225px);
+	background-color: #222222;
+	height: 560px;
+	top: 40px;
+}
+
+.suceso:hover .suceso-imagen {
+	width: 60%;
+	display: inline-block;
+}
+
+.suceso:hover .suceso-imagen img {
+	width: 100%;
+}
+
+.suceso:hover .suceso-texto {
+	margin-left: 10px;
+	width: calc(38% - 5px);
+	display: inline-block;
+	vertical-align: top;
+	color: #DDDDDD;
+	text-align: justify;
+}
+
+#imagena {
+	padding: 10px 10px 0 10px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+
+}
+/***********************************************
+ROW
+************************************************/
+	.row > * {
+		float: left;
+		margin: 10px;
+		padding: 15px 0 0 15px;
+		}
+
+	.row:after, .row:before {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+
+	  
+ /***************************************************
+ IMAGENES DE FONDO DE LAS PAGINAS
+ ****************************************************/
+  /* Imagen de fondo del header de la pagina principal*/
+	#header-wrapper .index {
+		background: url("../images/bogotan2.jpg") center center;
+        background-size: cover;
+	}
+
+    /* Imagen de fondo del header de historia */
+	#header-wrapper .historia {
+		background: url("../images/bogotan2.jpg") center center;
+        background-size: cover;
+	}
+       
+        #header-wrapper {
+            padding: 0;   
+        }
+        
+        #header {
+            position: relative;
+            padding: 180px 0px;
+        }
+
+        .homepage #header {
+            padding: 300px 0;
+        }
+        
+       .homepage #logo {
+            margin-top: -20px;
+	   }
+	   
+	   
+/********************************************************
+ELEMENTOS DE CADA UNA DE LAS PAGINAS DE NOTICIAS
+**************************************************++***/   
+	   
+ .contenidos {
+	max-width: 100%; 
+	margin: 20px auto;
+	position: relative;
+	background: #fff url(images/overlay.png) repeat;
+	}
+	  
+
+.noticia {
+	margin: 0px auto;
+	padding: 60px;
+	max-width: 90%;
+	background-color: rgba(0, 0, 0, 0.75);
+	color: #DDDDDD;
+}
+
+.noticia2 {
+	margin: 0px auto;
+	padding: 60px;
+	max-width: 90%;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #DDDDDD;
+	}
+
+.noticia img {
+	max-width: 100%;
+	margin: 1%;
+	float: left;
+}
+
+.noticia2 img {
+	max-width: 48%;
+	margin: 1%;
+	float: left;
+}
+
+.noticia h1 {
+	text-align: center;
+	margin: 0 0 15px 0;
+	font-weight:300;
+}
+
+.noticia2 h1 {
+	text-align: center;
+	margin: 0 0 15px 0;	
+}
+	
+.noticia a {
+	text-align:justify;
+	margin: 0 0 10px 0;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFF;
+}
+	
+.noticia2 p {
+	text-align:justify;
+	margin: 0 0 10px 0;
+	font-size: 15px;
+}   
+	   
+/********************************************************
+BOTONES DE CAMBIO DE PAGINA
+*********************************************************/
+	.wrapper {
+		position: relative;
+        padding: 40px 0px;
+		}
+        
+        /* Formato para el título dentro de la plantilla*/
+		.wrapper .title {
+			position: absolute;
+			left: 12%; /* centrado en la pantalla */
+            /* Formato del texto */
+			text-align: center;
+			border-radius:30px 30px 0px 0px;
+			letter-spacing: 3px; /* Espaciado entre letras */
+            /* Formato para el cuadro que contiene el texto del título */
+            width: 250px;
+            height: 30px;
+            top: -30px;
+            line-height: 50px;
+		}
+		
+		.wrapper .title2 {
+			position: absolute;
+			right: 12%;
+            /* Formato del texto */
+			text-align: center;
+			border-radius:30px 30px 0px 0px;
+			letter-spacing: 3px; /* Espaciado entre letras */
+            /* Formato para el cuadro que contiene el texto del título */
+            width: 250px;
+            height: 30px;
+            top: -30px;
+            line-height: 50px;
+   		}
+
+            /* Efecto de sombra en los cuadros de título (antes)*/
+			.wrapper .title:before {
+				content: '';
+				position: absolute;
+				bottom: -38px;
+				left: -35px;
+				width: 35px;
+				height: 38px;
+				background: url("../images/shadow.png");
+			}
+			
+			/* Efecto de sombra en los cuadros de título (antes)*/
+			.wrapper .title2:before {
+				content: '';
+				position: absolute;
+				bottom: -38px;
+				left: -35px;
+				width: 35px;
+				height: 38px;
+				background: url("../images/shadow.png");
+			}
+            
+            /* Efecto de sombra en los cuadros de título (después)*/
+			.wrapper .title:after {
+				transform: scaleX(-1);
+				content: '';
+				position: absolute;
+				bottom: -38px;
+				right: -35px;
+				width: 35px;
+				height: 38px;
+				background: url("../images/shadow.png");
+			}
+			
+			.wrapper .title2:after {
+				transform: scaleX(-1);
+				content: '';
+				position: absolute;
+				bottom: -38px;
+				right: -35px;
+				width: 35px;
+				height: 38px;
+				background: url("../images/shadow.png");
+			}
+    			        
+        /* Etilo de plantilla botones */
+		.wrapper.style3 {
+			background: #f3f3f3 url("../images/overlay.png");
+		}
+            
+            .wrapper.style3 a{
+                color: #525252;
+                text-decoration: none;
+            }
+			
+			 .wrapper.style3 a:hover {
+              color: #000000;
+				transform : scale(1.05);
+        		-webkit-transition-duration: 0.4s;
+   				 transition-duration: 0.4s;
+            }
+
+			.wrapper.style3 .title {
+				background: #f3f3f3 url("../images/overlay.png");
+				color: #484d55;
+			}
+			
+			.wrapper.style3 .title2 {
+				background: #f3f3f3 url("../images/overlay.png");
+				color: #484d55;
+			}
+
+/***********************************
+TABLA EDIFICIOS MAS ALTOS DE BOGOTA
+************************************/
+.contenedor-scroll {
+	overflow-y: auto;
+}
+
+.seccion-eventos {
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.7);
+	margin: 10px auto;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.seccion-eventos img
+	{
+		text-align:center;
+		position: relative;
+		margin: 10px auto;
+		display:block;
+		max-width: 100%;
+	}
+	
+
+.tabla-eventos {
+	padding: 10px;
+	position: relative;
+	text-align: center;
+}
+
+/* El fondo de las filas pares de la tabla se establece como un color gris claro */
+.tabla-eventos tr:nth-child(even) {
+	background-color: #999999;
+}
+
+/* El fondo de las filas impares de la tabla se establece como un color gris oscuro */
+.tabla-eventos tr:nth-child(odd) {
+	background-color: #777777;
+}
+
+/* El fondo de las filas titulares de la tabla se establece como un color negro */
+.tabla-eventos th {
+	background-color: rgba(0, 0, 0, 0.55);
+	padding: 10px;
+}
+     
+/**************************************************************************************************************************
+ Cuando la pantalla es menor que 480px
+**************************************************************************************************************************/
+	@media screen and (max-width: 480px) {
+
+   /*** NOTICIAS ***/		
+			   
+.noticia {
+	padding: 18px;
+	max-width: 96%;
+}
+
+.noticia2 {
+	padding: 18px;
+	max-width: 96%;
+}
+
+.noticia h1 {
+	text-align: center;
+	margin: 0 0 35px 0;
+	font-size: 22px;	
+}
+
+.noticia2 h1 {
+	text-align: center;
+	margin: 0 0 35px 0;
+	font-size: 22px;	
+}
+
+.noticia p {
+	font-size: 16px;
+}
+	
+.noticia2 p {
+	font-size: 16px;
+}
+
+.wrapper .title {
+	display: none;
+}
+
+.wrapper .title2 {
+	display: none;
+}
+   
+ /*** BODY ***/
+        body {
+            font-size: 14px;
+        }
+        
+		.wrapper {
+            padding: 10px 15px;
+        }
+                
+            .wrapper .title {
+                font-size: 0.9em;
+                width: 18em;
+                height: 2.5em;
+                top: -2.5em;
+                line-height: 2.5em;
+                margin-bottom: -2.5em;
+                margin-left: -9em;
+                padding-top: 0.5em;
+            }
+                    
+                .wrapper .title:before, .wrapper .title:after {
+                    height: 15px;
+                    bottom: -15px;
+                    background-size: 100% 100%;
+                }
+        
+        #header-wrapper > * {
+            padding: 6em 2em 22em 2em;
+        }
+		
+/*** NAV ***/
+		
+		/* Ajustar el menú de navegación */
+        #nav {
+            padding: 90px 0px 0px 0px;
+	        }|
+			
+		#nav ul
+		{
+			border-radius: 15px; /* Se cambia el radio de los bordes de la caja contenedora */
+		}
+		
+       	#nav > ul > li {
+            display: block; /* Mostrar los elementos del menú en forma de lista */
+            padding: 0;
+		    }
+	
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				padding: 0px;
+				letter-spacing: 1px;
+				font-size: 12px;
+			}
+		
+		#textos
+		{
+			font-size:18px;
+			padding: 150px 0px 150px 0px;
+		}
+		
+/*** HEADER ***/
+
+		#logo z a
+		{
+			display: block;
+			letter-spacing: .5px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: 100;
+			color: #323338;
+			margin: -80px 20px 0px 20px;
+		}
+
+		#logo span
+		{		
+			font-size: 14px;
+			width: 80%;
+			text-align: center;
+			margin: 0px auto;
+			letter-spacing: .1px;
+			}
+			
+/*** SECCIONES ***/
+		
+		section
+		{
+			max-width: 100%;
+		}
+		
+		.image.full
+			{
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			m{
+				font-size: 16px;
+				letter-spacing: -0.2px;
+				line-height:18px;
+				margin: 15px auto;
+				width: 90%;
+			}	
+			
+			.row > section,
+			.row > article
+			{
+			margin: 0 0 50px 0;
+
+			}
+			
+			.titulo li
+	{
+			letter-spacing: 1px;
+			outline: 0;
+			color: #FFF;
+			padding: 0px 0px 0px 0px;
+			text-align:center;
+			background-color: rgba(30, 30, 30, 0.98);
+			font-size:16px;
+			margin: 0 auto;
+	}
+     
+/*** Copyright ***/
+	
+	#copyright
+	{
+		padding: 5px;
+	}
+
+	#copyright ul
+	{
+		margin: 0px auto;
+		border: none;
+		line-height: 14px;
+	}		
+	
+		  .homepage #header {
+            padding: 350px 0;
+        }
+	
+	.contenido {
+		clear: both;
+	}
+	
+	.contenedor-scroll {
+		height: auto;
+		overflow-y: auto;
+		text-align: center;
+		margin: 0px 0px 50px 0px;
+		max-width: 97%;
+		
+	}
+		
+		.seccion-eventos {
+		width: auto;
+		float:none;
+		margin: 10px;
+		color: #FFFFFF;
+		height: auto;
+	}
+
+	.seccion-eventos h2 {
+		text-align: center;
+		margin: 0px auto 20px;
+	}
+	
+	.tabla-eventos {
+		max-width: 480px;
+		margin: 0px auto;
+		padding: none;
+	}
+	
+	.suceso {
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+		border-radius: 30px;
+	}
+	
+	.suceso-fecha {
+		padding: 0px 30px;
+		width: 100%;
+		display: block;
+		color: #000000;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.suceso-contenido {
+		margin: 0px 30px 10px 30px;
+		width: auto;
+		display: block;
+	}
+
+	.suceso-titulo {
+		padding: 10px 20px;
+		width: auto;
+		height: auto;
+		display: block;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	.suceso-info {
+		padding: 0px 30px 20px 30px;
+		position: static;
+		display: block;
+		background-color: #222222;
+	}
+
+	.suceso-texto {
+		margin-top: 10px;
+		display: block;
+		color: #DDDDDD;
+	}
+	
+	.suceso-imagen img {
+		margin: 0px auto;
+		width: 100%;
+	}
+	
+	.suceso:hover .suceso-fecha {
+		background-color: transparent;
+		-webkit-transition-duration: 0s; /* Safari */
+		transition-duration: 0s;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.suceso:hover .suceso-titulo {
+		position: static;
+		width: auto;
+		text-align: left;
+		text-align: center;
+	}
+
+	.suceso:hover .suceso-info {
+		padding: 0px 30px 20px 30px;
+		display: block;
+		width: auto;
+		height: auto;
+	}
+
+	.suceso:hover .suceso-imagen {
+		width: auto;
+		display: block;
+		height:auto;
+	}
+
+	.suceso:hover .suceso-imagen img {
+		width: 100%;
+	}
+
+	.suceso:hover .suceso-texto {
+		margin-left: 0px;
+		margin-top: 10px;
+		width: auto;
+		display: block;
+		color: #DDDDDD;
+	}
+	}
+
